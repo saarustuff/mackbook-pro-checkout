@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechToy Shop</title>
+        
        <!-- External bootstrap file -->
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
        rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
@@ -22,9 +23,7 @@
               Customize your Blue 24-inch iMac with Apple M1 chip
             </h1>
             <p>
-              Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core
-              GPU,and 16 core Neural Engine 8GB unified memory 256GB SSD storage
-              two thunderbolt /USB 4 ports magic Mouse magic Keyboard US English.
+              Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, <br> 7-core GPU, and 16 core Neural Engine, 8GB unified memory & 256GB SSD storage. <br> Two Thunderbolt/USB 4 ports. Magic Mouse, Magic Keyboard US-English.
             </p>
             <div>
                 <!-- memory details -->
@@ -34,18 +33,20 @@
             </div>
             <div>
                 <!-- storage details -->
+                <br>
                 <h1>Storage</h1>
                 <button class="btn border border-dark p-2 rounded" id="shipping-256gb-storage">256GB SSD storage</button>
                 <button class="btn border border-dark p-2 rounded" id="shipping-512gb-storage">512GB SSD storage</button>
-                <button class="btn border border-dark p-2 rounded" id="shipping-1tb-storage">1TBB SSD storage</button>
+                <button class="btn border border-dark p-2 rounded" id="shipping-1tb-storage">1TB SSD storage</button>
             </div>
             <div>
                 <!-- delivery option -->
-                <h1>Choose your delivery option</h1>
-                <button class="btn border border-dark p-2 rounded" id="free-delivery">Friday,Aug 25,Free prime Shipping</button>
-                <button class="btn border border-dark p-2 rounded" id="regular-delivery-cost">Friday,Aug 21,Delivery charge $20</button>
+                <br>
+                <h1>Choose your Delivery option</h1>
+                <button class="btn border border-dark p-2 rounded" id="free-delivery">Friday, Aug 25, Free Prime Shipping</button>
+                <button class="btn border border-dark p-2 rounded" id="regular-delivery-cost">Friday, Aug 21, Delivery Charge $20</button>
             </div>
-            <!-- table -->
+            <!-- total price table -->
             <table class="table mt-5 fw-bold">
                 <tr>
                     <td>Best Price</td>
@@ -56,7 +57,7 @@
                     <td>$<span id="extra-memory-cost">0</span></td>
                 </tr>
                 <tr>
-                    <td>Extra storage cost</td>
+                    <td>Extra Storage Cost</td>
                     <td>$<span id="extra-storage-cost">0</span> </td>
                 </tr>
                 
@@ -70,8 +71,8 @@
                 </tr>
             </table>
             <div>
-                <input id="copon-code" type="text">
-                <button id="apply-code" class="btn btn-warning">Apply</button>
+                <input class="rounded" id="coupon-code" type="text" placeholder="   Apply your Coupon!">
+                <button id="apply-code" class="btn btn-primary">Apply</button>
             </div>
             </div>
         </div>
