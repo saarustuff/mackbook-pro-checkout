@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechToy Shop</title>
+       <!-- External bootstrap file -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+       rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+       crossorigin="anonymous">
+   
+</head>
+<body>
+    <!-- section started -->
+    <section class="container">
+        <div class="row p-2 d-flex mt-5">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="images/mac.png" alt=""> </div>
+          <div class="col-lg-6">
+            <h1>
+              Customize your Blue 24-inch iMac with Apple M1 chip
+            </h1>
+            <p>
+              Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core
+              GPU,and 16 core Neural Engine 8GB unified memory 256GB SSD storage
+              two thunderbolt /USB 4 ports magic Mouse magic Keyboard US English.
+            </p>
+            <div>
+                <!-- memory details -->
+                <h1>Memory</h1>
+                <button class="btn border border-dark p-2 rounded" id="shipping-8gb-memory">8GB unified memory </button>
+                <button class="btn border border-dark p-2 rounded" id="shipping-16gb-memory">16GB unified memory</button>
+            </div>
+            <div>
+                <!-- storage details -->
+                <h1>Storage</h1>
+                <button class="btn border border-dark p-2 rounded" id="shipping-256gb-storage">256GB SSD storage</button>
+                <button class="btn border border-dark p-2 rounded" id="shipping-512gb-storage">512GB SSD storage</button>
+                <button class="btn border border-dark p-2 rounded" id="shipping-1tb-storage">1TBB SSD storage</button>
+            </div>
+            <div>
+                <!-- delivery option -->
+                <h1>Choose your delivery option</h1>
+                <button class="btn border border-dark p-2 rounded" id="free-delivery">Friday,Aug 25,Free prime Shipping</button>
+                <button class="btn border border-dark p-2 rounded" id="regular-delivery-cost">Friday,Aug 21,Delivery charge $20</button>
+            </div>
+            <!-- table -->
+            <table class="table mt-5 fw-bold">
+                <tr>
+                    <td>Best Price</td>
+                    <td>$<span id="best-price">1299</span></td>
+                </tr>
+                <tr>
+                    <td>Extra Memory Cost</td>
+                    <td>$<span id="extra-memory-cost">0</span></td>
+                </tr>
+                <tr>
+                    <td>Extra storage cost</td>
+                    <td>$<span id="extra-storage-cost">0</span> </td>
+                </tr>
+                
+                <tr class="border-top border-dark ">
+                    <td>Delivery Charge</td>
+                    <td>$<span id="delivery-charge">0</span></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$<span id="sub-total">1299</span></td>
+                </tr>
+            </table>
+            <div>
+                <input id="copon-code" type="text">
+                <button id="apply-code" class="btn btn-warning">Apply</button>
+            </div>
+            </div>
+        </div>
+            </div>
+            </section>
+<section class="container text-center border-top border-dark">
+    <h1>Total:$
+        <span id="total">1299 </span>
+      </h1>
+</section>
+<script src="js/shop.js"></script>
+    
+</body>
+</html>
